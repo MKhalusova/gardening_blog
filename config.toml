@@ -1,0 +1,180 @@
+baseURL = 'http://thymefortomatoes.com'
+languageCode = 'en-us'
+
+# website title
+title = 'THYME FOR TOMATOES'
+
+# default content of website
+defaultContentLanguage = "en"
+
+# whether to use robots.txt
+enableRobotsTXT = true
+
+# length of summary
+summaryLength = 50
+
+[author]
+name = "Maria Khalusova"
+description = "A growing gardener"
+image = "/images/author.jpg"
+
+# link of follow me in author card and footer
+# link = "https://www.instagram.com/thyme_for_tomatoes/"
+
+# Taxonomies, Currently, only the following 3 taxonomies are supported
+# If you don't want one of them，delete it in [menus] instead here
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[params]
+[params.site]
+onlyOneLang = false
+# style of theme: auto, light, dark
+mode = 'auto'
+# page configuration
+[params.page]
+
+# top image in home page, note that the "/" in path is necessary, the same applies below
+homeTopImg = "/images/home.jpg"
+# title in home top image, support Markdown
+homeTitle = "Thyme For Tomatoes"
+# font size(px)
+homeTitleFontSize = 40
+# content in home top image, support Markdown
+homeContent = "Grow a flavorful garden with me"
+# font size(px)
+homeContentFontSize = 20
+
+# top image in categories page
+categoryTopImg = "/images/categories.jpg"
+
+# description of categories terms page
+categoryDes = "Blog posts by category"
+
+# top image in tags page
+tagTopImg = "/images/tag.jpg"
+# description of tags terms page
+tagDes = "Blog posts by tags"
+
+# top image in all posts page
+allPostsTopImg = "/images/allPosts.jpg"
+# description of allposts page
+allPostsDes = "Reflections, insights, tips'n'tricks, gardening how-tos, and more"
+
+# top image in about page
+aboutTopImg = "/images/about.jpg"
+# description of about page
+aboutDes = "Lovely to see you here"
+
+# default image for a post without "image" param
+defaultPostImg = "/images/default.jpg"
+
+maxHomePostCount = 5
+maxPageRelatedCount = 5
+maxPageNewestCount = 5
+
+# Valine comment
+[params.valine]
+enable = false
+appid = 'xxxxxxxxxxxxxxxxxxxxxxxx-xxxxxxxx'
+appkey = 'xxxxxxxxxxxxxxxxxxxxxxxx'
+placeholder = '输入你的评论'
+avatar = 'robohash'
+requiredFields = ['nick']
+visitor = true
+pageSize = 5
+
+# footer
+[params.footer]
+# whether to enable footer
+enable = true
+# copyright
+copyRight = true
+from = 2022
+# wheher to enable theme information
+ themeInfo = true
+
+[menus]
+[[menus.main]]
+name = "HOME"
+url = "/"
+weight = 1
+
+[[menus.main]]
+name = "POSTS"
+url = "/posts"
+weight = 2
+
+[[menus.main]]
+name = "CATEGORIES"
+url = "/categories"
+weight = 3
+
+[[menus.main]]
+name = "TAGS"
+url = "/tags"
+weight = 5
+
+[[menus.main]]
+name = "ABOUT"
+url = "/about"
+weight = 6
+
+
+# social, maxum 6. Can add youtube later
+[[menus.social]]
+name = "Instagram"
+url = "https://www.instagram.com/thyme_for_tomatoes/"
+pre = "<i class='fa fa-instagram'></i>"
+weight = 1
+[[menus.social]]
+name = "Twitter"
+url = "https://twitter.com/mariaKhalusova"
+pre = "<i class='fa fa-twitter'></i>"
+weight = 2
+
+# related configuration, see more: https://gohugo.io/content-management/related/
+[related]
+threshold = 0
+includeNewer = true
+toLower = false
+
+[[related.indices]]
+name = "categories"
+weight = 100
+toLower = false
+
+[[related.indices]]
+name = "tags"
+weight = 80
+toLower = false
+
+[[related.indices]]
+name = "date"
+weight = 10
+
+# Markup related configuration in Hugo
+[markup]
+# syntax highlight: https://gohugo.io/functions/highlight/
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ''
+lineAnchors = ''
+lineNoStart = 1
+lineNos = true
+anchorLineNos = false
+lineNumbersInTable = true
+noClasses = false
+noHl = false
+hl_inline = false
+style = 'monokailight'
+tabWidth = 4
+
+# enable the following code if there is html statements in md files
+# [markup.goldmark]
+#     [markup.goldmark.renderer]
+#         unsafe = true
+
